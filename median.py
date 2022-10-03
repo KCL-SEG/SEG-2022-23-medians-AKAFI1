@@ -9,4 +9,9 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-print(numbers)
+x=len(numbers)
+
+if x % 2 == 1:
+    print(f'the median is: {numbers[x//2]}')
+else:
+    print(f'the median is: {(numbers[(x//2)]+numbers[(x//2)-1])/2}')
